@@ -8,8 +8,8 @@ import Lucian from "./Lucian";
 function App() {
   return (
     <Router>
-      <div>
-        <nav>
+      <div className="bg-background h-screen w-screen">
+        <nav className="">
           <ul>
             <li>
               <Link to="/">Home</Link>
