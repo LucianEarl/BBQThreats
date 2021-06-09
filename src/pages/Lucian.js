@@ -1,4 +1,8 @@
 import React from "react";
+// Home background components
+import Background from "../components/background/Background";
+import BackgroundData from "../components/background/BackgroundData";
+
 import Pic from "../media/images/lucian.jpg";
 
 function Lucian() {
@@ -76,6 +80,7 @@ function Lucian() {
           </article>
         </section>
       </section>
+      <Background BackgroundData={BackgroundData[0]} />
     </div>
   );
 }

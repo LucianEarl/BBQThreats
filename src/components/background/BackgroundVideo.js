@@ -7,7 +7,7 @@ function BackgroundVideo(props) {
 
   return (
     <video
-      className="absolute z-negative1 min-h-none min-w-screen max-w-7xl sm:max-w-none"
+      className="absolute z-negative1 w-screen h-screen object-cover"
       autoPlay
       loop
       muted
