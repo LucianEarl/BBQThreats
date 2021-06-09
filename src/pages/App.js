@@ -7,7 +7,7 @@ import Lucian from "./Lucian";
 
 function App() {
   return (
-    <div className="bg-background h-full w-screen">
+    <div className="relative flex flex-col h-screen w-screen justify-between z-0 overflow-x-hidden">
       <Router>
         <nav className="">
           <ul>
