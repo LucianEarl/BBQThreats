@@ -1,7 +1,8 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Home from "./Home";
+import Navbar from "../components/Navbar";
 import Tim from "./Tim";
 import Lucian from "./Lucian";
 
@@ -9,20 +10,7 @@ function App() {
   return (
     <div className="bg-relative flex flex-col h-screen w-screen justify-between z-0 overflow-x-hidden">
       <Router>
-        <nav className="">
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/Lucian">Lucian</Link>
-            </li>
-            <li>
-              <Link to="/Tim">Tim</Link>
-            </li>
-          </ul>
-        </nav>
-
+        <Navbar />
         <Switch>
           <Route path="/" exact>
             <Home />

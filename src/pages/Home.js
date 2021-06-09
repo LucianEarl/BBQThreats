@@ -11,6 +11,7 @@ import lucianPic from "../media/images/lucian.jpg";
 import timPic from "../media/images/tim.jpg";
 
 function Home() {
+
   return (
     <div className="bg-background bg-opacity-40 h-screen w-screen container mx-auto text-center">
       <section className="text-white font-righteous">
