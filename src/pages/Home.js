@@ -13,28 +13,31 @@ import timPic from "../media/images/tim.jpg";
 function Home() {
   return (
     <div className="bg-background bg-opacity-40 h-screen w-screen mx-auto text-center flex flex-col">
-      <section className="text-white font-righteous order-1">
-        <article className="text-3xl p-2">
-          <h2>What?</h2>
-        </article>
-        <article className="p-2 mx-2">
-          <p>
-            The fantastic collaborative portfolio of Lucian Earl and Tim Whatley
-          </p>
-        </article>
-      </section>
-      <section className="text-white font-righteous order-2">
-        <article className="text-3xl p-2">
-          <h2>Who?</h2>
-        </article>
-        <article className="">
-          <p>We both are rocking coolio people</p>
-        </article>
-        <article className="flex flex-row">
-          <Button name={"Lucian Earl"} image={lucianPic} link={"/Lucian"} />
-          <Button name={"Tim Whatley"} image={timPic} link={"/Tim"} />
-        </article>
-      </section>
+      <div className="container mx-auto my-auto">
+        <section className="text-white font-righteous order-1">
+          <article className="text-3xl p-2">
+            <h2>What?</h2>
+          </article>
+          <article className="p-2 mx-2">
+            <p>
+              The fantastic collaborative portfolio of Lucian Earl and Tim
+              Whatley
+            </p>
+          </article>
+        </section>
+        <section className="text-white font-righteous order-2">
+          <article className="text-3xl p-2">
+            <h2>Who?</h2>
+          </article>
+          <article className="">
+            <p>We both are rocking coolio people</p>
+          </article>
+          <article className="flex flex-row">
+            <Button name={"Lucian Earl"} image={lucianPic} link={"/Lucian"} />
+            <Button name={"Tim Whatley"} image={timPic} link={"/Tim"} />
+          </article>
+        </section>
+      </div>
       <Background BackgroundData={BackgroundData[0]} />
     </div>
   );
