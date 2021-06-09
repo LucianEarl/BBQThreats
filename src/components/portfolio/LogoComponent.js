@@ -8,7 +8,7 @@ function LogoComponent(props) {
   return (
     <div className="w-10 m-2">
       <a href={link} target="_blank" rel="noreferrer">
-        <h2 className="text-xs">{name}</h2>
+        <h2 className="text-xs font-righteous text-white">{name}</h2>
         <img
           src={image}
           alt=""
