@@ -1,11 +1,9 @@
 import React from "react";
 
-import poster from "../../media/images/videoPosters/HomePoster.png";
-
 // provides video for Background and styling
 function BackgroundVideo(props) {
   // sets prop for calling component in parent
-  const { video } = props;
+  const { video, poster } = props;
 
   return (
     <video

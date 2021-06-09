@@ -7,8 +7,11 @@ function Background({ BackgroundData }) {
   return (
     <div className="fixed object-cover bg-night h-full w-full top-0 left-0 z-negative1">
       <div className="fixed w-screen">
-        {BackgroundData.video !== "" ? (
-          <BackgroundVideo video={BackgroundData.video} />
+        {BackgroundData.video && BackgroundData.poster !== "" ? (
+          <BackgroundVideo
+            video={BackgroundData.video}
+            poster={BackgroundData.poster}
+          />
         ) : undefined}
       </div>
     </div>
