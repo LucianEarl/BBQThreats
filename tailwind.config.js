@@ -2,8 +2,6 @@ module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    // negative zIndex
-
     // custom fonts
     fontFamily: {
       bodoni: ["Bodoni Moda"],
@@ -14,6 +12,7 @@ module.exports = {
       colors: {
         background: "#8E0F15",
       },
+      // negative zIndex
       zIndex: {
         negative1: "-1",
       },
