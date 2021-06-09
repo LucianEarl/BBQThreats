@@ -7,8 +7,8 @@ import Lucian from "./Lucian";
 
 function App() {
   return (
-    <Router>
-      <div className="bg-background h-screen w-screen">
+    <div className="bg-background h-full w-screen">
+      <Router>
         <nav className="">
           <ul>
             <li>
@@ -24,18 +24,18 @@ function App() {
         </nav>
 
         <Switch>
-          <Route path="/">
+          <Route path="/" exact>
             <Home />
           </Route>
-          <Route path="/Tim">
+          <Route path="/Tim" exact>
             <Tim />
           </Route>
-          <Route path="/Lucian">
+          <Route path="/Lucian" exact>
             <Lucian />
           </Route>
         </Switch>
-      </div>
-    </Router>
+      </Router>
+    </div>
   );
 }
 
