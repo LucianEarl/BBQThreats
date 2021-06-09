@@ -41,10 +41,10 @@ function Home() {
             <p>We both are rocking coolio people</p>
           </article>
           <section className="flex flex-row ">
-            <article className="flex sm:justify-center">
+            <article className="flex justify-center">
               <Button name={"Lucian Earl"} image={lucianPic} link={"/Lucian"} />
             </article>
-            <article className="flex sm:justify-center">
+            <article className="flex justify-center">
               <Button name={"Tim Whatley"} image={timPic} link={"/Tim"} />
             </article>
           </section>
