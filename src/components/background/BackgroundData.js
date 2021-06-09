@@ -1,7 +1,5 @@
 // import of video files
 import HomeVideo from "../../media/video/BackgroundFire.mp4";
-import Sparks from "../../media/video/sparks.mp4";
-import Bonfire from "../../media/video/bonfire.mp4";
 import Ferns from "../../media/video/ferns.mp4";
 
 // import of video posters
