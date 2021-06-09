@@ -13,8 +13,11 @@ import timPic from "../media/images/tim.jpg";
 function Home() {
   return (
     <div className="bg-background bg-opacity-40 h-screen w-screen mx-auto text-center flex flex-col">
-      <div className="container mx-auto my-auto">
-        <section className="text-white font-righteous order-1">
+      <div className="mx-auto my-auto flex flex-wrap sm:justify-center">
+        <section className="hidden sm:block text-white font-righteous text-5xl p-6">
+          <h2>BBQThreats Presents</h2>
+        </section>
+        <section className="text-white font-righteous order-1 sm:order-2">
           <article className="text-3xl p-2">
             <h2>What?</h2>
           </article>
@@ -25,17 +28,26 @@ function Home() {
             </p>
           </article>
         </section>
-        <section className="text-white font-righteous order-2">
+        <section className="text-white font-righteous order-2 sm:order-1 sm:flex sm:flex-col sm:w-full">
           <article className="text-3xl p-2">
             <h2>Who?</h2>
           </article>
-          <article className="">
+          <article className="hidden sm:block sm:text-3xl">
+            <h2>
+              {"<- "}These Guys{" ->"}
+            </h2>
+          </article>
+          <article className="sm:hidden">
             <p>We both are rocking coolio people</p>
           </article>
-          <article className="flex flex-row">
-            <Button name={"Lucian Earl"} image={lucianPic} link={"/Lucian"} />
-            <Button name={"Tim Whatley"} image={timPic} link={"/Tim"} />
-          </article>
+          <section className="flex flex-row ">
+            <article className="flex sm:justify-center">
+              <Button name={"Lucian Earl"} image={lucianPic} link={"/Lucian"} />
+            </article>
+            <article className="flex sm:justify-center">
+              <Button name={"Tim Whatley"} image={timPic} link={"/Tim"} />
+            </article>
+          </section>
         </section>
       </div>
       <Background BackgroundData={BackgroundData[0]} />
