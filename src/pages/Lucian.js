@@ -1,8 +1,14 @@
 import React from "react";
+
 // Home background components
 import Background from "../components/background/Background";
 import BackgroundData from "../components/background/BackgroundData";
 
+import LogoComponent from "../components/portfolio/LogoComponent";
+
+//imported images
+import githubLogo from "../media/images/logos/GitHub-Mark-120px-plus.png";
+import linkedinLogo from "../media/images/logos/LI-In-Bug.png";
 import Pic from "../media/images/lucian.jpg";
 
 function Lucian() {
@@ -19,6 +25,22 @@ function Lucian() {
           className="md:w-1/3 p-5 rounded-full md:p-0 md:border-white md:border-8"
           alt="A dashing young man"
         />
+        <section className="flex flex-row w-full px-2">
+          <article className="flex justify-start w-1/2">
+            <LogoComponent
+              image={githubLogo}
+              name={"Github"}
+              link={"https://github.com/LucianEarl"}
+            />
+          </article>
+          <article className="flex justify-end w-1/2">
+            <LogoComponent
+              image={linkedinLogo}
+              name={"Linkedin"}
+              link={"https://www.linkedin.com/in/lucianearl/"}
+            />
+          </article>
+        </section>
         <section className="text-white text-center w-full font-bodoni px-4">
           <article>
             <h1 className="text-5xl pt-10 pb-5">Who am I?</h1>
@@ -75,7 +97,7 @@ function Lucian() {
                 <h2>Director - Daisy Lake</h2>
                 <p>
                   During my studies I started a business with a friend, and we
-                  designed, developed and deployed several websites for clients
+                  designed, developed and deployed several websites for clients.
                 </p>
               </li>
             </ul>
