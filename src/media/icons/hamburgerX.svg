@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+              "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg"  width="64" height="64" >
+    <rect transform="rotate(45 14.7366 3.30646)" x="14.73656" y="3.30645" fill="#FFFFFF" rx="5" height="16" width="62"/>
+    <rect transform="rotate(-45 3.42284 47.0306)" x="3.42284" y="47.03063" fill="#FFFFFF" rx="5" height="16" width="62"/>
+</svg>
