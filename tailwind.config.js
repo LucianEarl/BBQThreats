@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       colors: {
         background: "#8E0F15",
+        darkRed: "#3b0003",
       },
       // negative zIndex
       zIndex: {
