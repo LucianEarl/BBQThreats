@@ -6,7 +6,7 @@ function HomeButton(props) {
   const { name, image, link } = props;
 
   return (
-    <div className=" w-1/2 m-3 flex content-center items-center">
+    <div className=" w-1/2 m-3 flex content-center items-center justify-center">
       <Link
         className="p-2 hover:border-black hover:font-black active:border-black active:font-black flex flex-col items-center justify-center"
         to={link}
