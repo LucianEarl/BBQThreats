@@ -18,7 +18,7 @@ function NavButton({ buttonText, pageLink, closeMenu, backgroundPic }) {
       // where the button routes to
       to={pageLink}
       onClick={closeMenu}
-      className="text-white text-6xl w-screen"
+      className="text-white font-righteous text-6xl w-screen"
     >
       {bgImage}
       <p className="flex w-screen h-36 relative justify-center items-center z-20">
