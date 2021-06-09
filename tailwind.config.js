@@ -9,6 +9,7 @@ module.exports = {
     // custom fonts
     fontFamily: {
       bodoni: ["Bodoni Moda"],
+      righteous: ["Righteous"],
     },
     // custom colors
     extend: {
