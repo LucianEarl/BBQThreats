@@ -7,14 +7,16 @@ import Pic from "../media/images/lucian.jpg";
 
 function Lucian() {
   return (
-    <div>
+    <div className="bg-opacity-40 bg-black">
       <section className="flex flex-wrap">
         <article className="md:w-2/3 text-center">
-          <h1 className="text-white text-8xl font-bodoni">Lucian Earl</h1>
+          <h1 className="text-white text-8xl md:text-9xl font-bodoni">
+            Lucian Earl
+          </h1>
         </article>
         <img
           src={Pic}
-          className="md:w-1/3 rounded-full border-white hover:animate-ping"
+          className="md:w-1/3 p-5 rounded-full md:p-0 md:border-white md:border-8"
           alt="A dashing young man"
         />
         <section className="text-white text-center w-full font-bodoni px-4">
@@ -80,7 +82,7 @@ function Lucian() {
           </article>
         </section>
       </section>
-      <Background BackgroundData={BackgroundData[0]} />
+      <Background BackgroundData={BackgroundData[2]} />
     </div>
   );
 }
