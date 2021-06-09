@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import NavButton from "../components/NavButton";
+import LucianFace from "../media/images/lucian.jpg";
 
 import MobileMenu from "../media/icons/hamburgerMenu.svg";
 import MobileClose from "../media/icons/hamburgerX.svg";
@@ -12,15 +13,18 @@ function Navbar() {
     // the function to change the hamburger menu to a cross and vice versa
     setMenuStatus(!menuStatus);
   let menuButton = <img src={MobileMenu} alt="" />;
+  let navHeader = "flex flex-wrap h-1/6 w-screen";
   if (menuStatus) {
-    menuButton = <img src={MobileClose} className="fixed z-10" alt="" />;
+    menuButton = <img src={MobileClose} alt="" />; // needs to appear when the menu is open
+    navHeader = "flex flex-wrap w-screen h-1/6 fixed z-20";
   } else {
     menuButton = <img src={MobileMenu} alt="" />;
+    navHeader = "flex flex-wrap w-screen h-1/6";
   }
   return (
     <div>
-      <nav>
-        <section className="flex flex-wrap h-1/6">
+      <nav className="md:hidden">
+        <section className={navHeader}>
           <Link className="text-white w-5/6 text-4xl" to="/">
             BBQ
             <br />
@@ -48,6 +52,7 @@ function Navbar() {
               pageLink="/Lucian"
               closeMenu={toggleMenu}
               buttonText="Lucian Earl"
+              backgroundPic={LucianFace}
             />
           </li>
           <li>
@@ -55,6 +60,7 @@ function Navbar() {
               pageLink="/Tim"
               closeMenu={toggleMenu}
               buttonText="Tim Whatley"
+              backgroundPic={LucianFace}
             />
           </li>
         </ul>
