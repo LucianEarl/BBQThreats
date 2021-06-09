@@ -42,7 +42,7 @@ function Navbar() {
         <ul
           className={
             menuStatus // hide content when the menu is toggled on mobile
-              ? "flex flex-col text-center h-full top-0 z-0 fixed bg-background w-full md:flex-row justify-evenly"
+              ? "flex flex-col text-center h-full top-0 z-10 fixed bg-background w-full md:flex-row justify-evenly"
               : "hidden md:flex md:text-center md:justify-evenly md:items-center"
           }
         >

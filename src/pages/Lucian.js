@@ -13,7 +13,7 @@ import Pic from "../media/images/lucian.jpg";
 
 function Lucian() {
   return (
-    <div className="bg-opacity-40 bg-black">
+    <div className="bg-opacity-40 bg-black absolute pt-1/5">
       <section className="flex flex-wrap">
         <article className="md:w-2/3 text-center">
           <h1 className="text-white text-8xl md:text-9xl font-bodoni">
@@ -25,7 +25,7 @@ function Lucian() {
           className="md:w-1/3 p-5 rounded-full md:p-0 md:border-white md:border-8"
           alt="A dashing young man"
         />
-        <section className="flex flex-row w-full px-2">
+        <section className="flex flex-row w-full px-4">
           <article className="flex justify-start w-1/2">
             <LogoComponent
               image={githubLogo}
@@ -53,18 +53,18 @@ function Lucian() {
           </article>
           <article>
             <h1 className="text-5xl pt-10 pb-5">Portfolio</h1>
-            <p>
+            <p className="mb-3">
               Though I am relatively new to the development industry, I do have
-              several live client sites I am proud to show:
+              several live client sites I am proud to show off:
             </p>
-            <ul className="underline text-lg">
-              <li>
+            <ul className="underline text-xl">
+              <li className="mb-3">
                 <a href="starrynights.co.nz" target="_blank" rel="noreferrer">
                   StarryNights.co.nz
                 </a>
               </li>
 
-              <li>
+              <li className="mb-3">
                 <a href="clothNZ.co.nz" target="_blank" rel="noreferrer">
                   ClothNZ.co.nz
                 </a>
