@@ -2,22 +2,23 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import NavButton from "../components/NavButton";
-import LucianFace from "../media/images/lucian.jpg";
 
+import LucianFace from "../media/images/lucian.jpg";
 import MobileMenu from "../media/icons/hamburgerMenu.svg";
 import MobileClose from "../media/icons/hamburgerX.svg";
 
 function Navbar() {
-  const [menuStatus, setMenuStatus] = useState(false);
-  const toggleMenu = () =>
-    // the function to change the hamburger menu to a cross and vice versa
-    setMenuStatus(!menuStatus);
-  let menuButton = <img src={MobileMenu} alt="" />;
+  const [menuStatus, setMenuStatus] = useState(false); // start with menu closed
+  const toggleMenu = () => setMenuStatus(!menuStatus); // the function to change the hamburger menu to a cross and vice versa
+
+  let menuButton = <img src={MobileMenu} alt="" />; // start with closed menu
   let navHeader = "flex flex-wrap h-1/6 w-screen";
+
   if (menuStatus) {
     menuButton = <img src={MobileClose} alt="" />; // needs to appear when the menu is open
     navHeader = "flex flex-wrap w-screen h-1/6 fixed z-20";
   } else {
+    // else the menu is closed
     menuButton = <img src={MobileMenu} alt="" />;
     navHeader = "flex flex-wrap w-screen h-1/6";
   }
@@ -25,7 +26,7 @@ function Navbar() {
     <div>
       <nav className="md:hidden">
         <section className={navHeader}>
-          <Link className="text-white w-5/6 text-4xl" to="/">
+          <Link className="text-white font-righteous w-5/6 text-4xl" to="/">
             BBQ
             <br />
             THREATS.com
