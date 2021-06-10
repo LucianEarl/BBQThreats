@@ -8,7 +8,7 @@ import Lucian from "./Lucian";
 
 function App() {
   return (
-    <div className="bg-relative flex flex-col h-screen w-screen justify-between z-0 overflow-x-hidden">
+    <div className="bg-relative flex flex-col h-screen w-full justify-between z-0 overflow-x-hidden">
       <Router>
         <Navbar />
         <Switch>

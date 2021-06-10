@@ -13,7 +13,7 @@ function Navbar() {
   const toggleMenu = () => setMenuStatus(!menuStatus); // the function to change the hamburger menu to a cross and vice versa
 
   let menuButton = <img src={MobileMenu} alt="" />; // start with closed menu
-  let navHeader = "flex flex-wrap h-1/6 w-screen";
+  let navHeader = "flex flex-wrap h-1/6 w-screen relative top-0 z-20";
 
   if (menuStatus) {
     menuButton = <img src={MobileClose} alt="" />; // needs to appear when the menu is open
@@ -21,7 +21,7 @@ function Navbar() {
   } else {
     // else the menu is closed
     menuButton = <img src={MobileMenu} alt="" />;
-    navHeader = "flex flex-wrap w-screen h-1/6";
+    navHeader = "flex flex-wrap w-screen h-1/6 relative top-0 z-20";
   }
   return (
     <div>
@@ -42,7 +42,7 @@ function Navbar() {
         <ul
           className={
             menuStatus // hide content when the menu is toggled on mobile
-              ? "flex flex-col text-center h-full top-0 z-0 fixed bg-background w-full md:flex-row justify-evenly"
+              ? "flex flex-col text-center h-full top-0 z-10 fixed bg-background w-full md:flex-row justify-evenly"
               : "hidden md:flex md:text-center md:justify-evenly md:items-center"
           }
         >

@@ -17,6 +17,14 @@ module.exports = {
       zIndex: {
         negative1: "-1",
       },
+      padding: {
+        "1/5": "20%",
+        "1/4": "25%",
+      },
+      inset: {
+        "1/5": "20%",
+        "-1/5": "-20%",
+      },
     },
   },
   variants: {
