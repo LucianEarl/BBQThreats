@@ -54,7 +54,7 @@ function Lucian() {
             </h1>
             <section className="md:w-3/5 md:px-10">
               <p>
-                I'm a recent gradute in software development, and would love an
+                I'm a recent graduate in software development and would love an
                 opportunity to contribute to the industry. I have experience in
                 just about every aspect of software, particularly in web
                 development but I'm always eager to learn new skills and solve
