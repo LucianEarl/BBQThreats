@@ -1,41 +1,29 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Home from "./Home";
+import Navbar from "../components/Navbar";
 import Tim from "./Tim";
 import Lucian from "./Lucian";
 
 function App() {
   return (
-    <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/Lucian">Lucian</Link>
-            </li>
-            <li>
-              <Link to="/Tim">Tim</Link>
-            </li>
-          </ul>
-        </nav>
-
+    <div className="bg-relative flex flex-col h-screen w-full justify-between z-0 overflow-x-hidden">
+      <Router>
+        <Navbar />
         <Switch>
-          <Route path="/">
+          <Route path="/" exact>
             <Home />
           </Route>
-          <Route path="/Tim">
+          <Route path="/Tim" exact>
             <Tim />
           </Route>
-          <Route path="/Lucian">
+          <Route path="/Lucian" exact>
             <Lucian />
           </Route>
         </Switch>
-      </div>
-    </Router>
+      </Router>
+    </div>
   );
 }
 
