@@ -13,19 +13,21 @@ import Pic from "../media/images/lucian.jpg";
 
 function Lucian() {
   return (
-    <div className="bg-opacity-40 bg-black absolute pt-1/4 w-screen">
-      <section className="flex flex-wrap">
-        <article className="md:w-2/3 ">
-          <h1 className="text-white text-center text-6xl sm:text-8xl md:text-9xl font-bodoni">
-            Lucian Earl
-          </h1>
-        </article>
-        <img
-          src={Pic}
-          className="md:w-1/3 p-5 rounded-full md:p-0 md:border-white md:border-8"
-          alt="A dashing young man"
-        />
-        <section className="flex flex-row w-full px-4">
+    <div className="bg-opacity-40 bg-black absolute  pt-1/4 md:pt-0 w-full md:overflow-x-hidden">
+      <section className="flex flex-wrap md:overflow-x-hidden">
+        <div className="md:flex md:justify-evenly md:w-full">
+          <article className=" flex items-center text-center justify-center md:w-auto">
+            <h1 className="text-white text-center text-6xl sm:text-8xl md:text-9xl font-bodoni ">
+              Lucian Earl
+            </h1>
+          </article>
+          <img
+            src={Pic}
+            className="md:w-1/3 p-5 rounded-full md:p-0 md:border-white md:border-8 md:flex md:items-center md:justify-center"
+            alt="A dashing young man"
+          />
+        </div>
+        <section className="flex flex-row w-full md:w-1/3 md:pl-20 px-4 md:px-0">
           <article className="flex justify-start w-1/2">
             <LogoComponent
               image={githubLogo}
@@ -41,7 +43,7 @@ function Lucian() {
             />
           </article>
         </section>
-        <section className="text-white text-center w-full font-bodoni px-4">
+        <section className="text-white text-center w-full font-bodoni px-4 md:px-0">
           <article>
             <h1 className="text-4xl sm:text-5xl pt-10 pb-5">Who am I?</h1>
             <p>
