@@ -8,9 +8,12 @@ import LogoComponent from "../components/portfolio/LogoComponent";
 //imported images
 import githubLogo from "../media/images/logos/GitHub-Mark-120px-plus.png";
 import linkedinLogo from "../media/images/logos/LI-In-Bug.png";
-import timImage from "../media/images/tim.jpg";
+import timImage from "../media/images/tim.png";
 
 function Tim() {
+  // function to show/hide sections on the portfolio page for easier reading
+  const onClick = () => {};
+
   return (
     <div className="bg-background bg-opacity-40 h-screen w-screen mx-auto text-center flex flex-col overflow-scroll font-righteous text-white">
       <section className="flex flex-row w-full px-2">
