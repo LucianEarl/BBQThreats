@@ -16,7 +16,7 @@ function HomeButton(props) {
           alt=""
           className="max-w-15 max-h-15 min-w-12 min-h-12 rounded-full border-white border-4 m-2"
         />
-        <h2>{name}</h2>
+        <h2 className="sm:text-4xl">{name}</h2>
       </Link>
     </div>
   );
