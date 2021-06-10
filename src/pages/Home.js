@@ -38,7 +38,9 @@ function Home() {
             </h2>
           </article>
           <article className="sm:hidden">
-            <p>We both are rocking coolio people</p>
+            <h2>
+              {"<- "}These Guys{" ->"}
+            </h2>
           </article>
           <section className="flex flex-row ">
             <article className="flex justify-center">

@@ -13,10 +13,10 @@ import Pic from "../media/images/lucian.jpg";
 
 function Lucian() {
   return (
-    <div className="bg-opacity-40 bg-black absolute pt-1/5">
+    <div className="bg-opacity-40 bg-black absolute pt-1/4 w-screen">
       <section className="flex flex-wrap">
-        <article className="md:w-2/3 text-center">
-          <h1 className="text-white text-8xl md:text-9xl font-bodoni">
+        <article className="md:w-2/3 ">
+          <h1 className="text-white text-center text-6xl sm:text-8xl md:text-9xl font-bodoni">
             Lucian Earl
           </h1>
         </article>
@@ -43,7 +43,7 @@ function Lucian() {
         </section>
         <section className="text-white text-center w-full font-bodoni px-4">
           <article>
-            <h1 className="text-5xl pt-10 pb-5">Who am I?</h1>
+            <h1 className="text-4xl sm:text-5xl pt-10 pb-5">Who am I?</h1>
             <p>
               I'm a gradute who is passionate about software development, always
               eager to learn new skills and solve new problems. I have
@@ -52,7 +52,7 @@ function Lucian() {
             </p>
           </article>
           <article>
-            <h1 className="text-5xl pt-10 pb-5">Portfolio</h1>
+            <h1 className="text-4xl sm:text-5xl pt-10 pb-5">Portfolio:</h1>
             <p className="mb-3">
               Though I am relatively new to the development industry, I do have
               several live client sites I am proud to show off:
@@ -77,11 +77,11 @@ function Lucian() {
             </ul>
           </article>
           <article>
-            <h1 className="text-5xl pt-10 pb-5">Skills</h1>
+            <h1 className="text-4xl sm:text-5xl pt-10 pb-5">Skills:</h1>
             <p>I am a man, allegedly. Lorem epsum, etc.</p>
           </article>
           <article>
-            <h1 className="text-5xl pt-10 pb-5">Qualifications</h1>
+            <h1 className="text-4xl sm:text-5xl pt-10 pb-5">Qualifications:</h1>
             <h2 className="text-2xl">NZ Diploma in Software Development</h2>
             <p>Whitecliffe College of Arts and Technology, 2021</p>
             <br />
@@ -91,7 +91,9 @@ function Lucian() {
             <p>University of Canterbury, 2018</p>
           </article>
           <article>
-            <h1 className="text-5xl pt-10 pb-5">Work Experience</h1>
+            <h1 className="text-4xl sm:text-5xl pt-10 pb-5">
+              Work Experience:
+            </h1>
             <ul>
               <li>
                 <h2>Director - Daisy Lake</h2>
