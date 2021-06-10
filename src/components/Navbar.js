@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import NavButton from "../components/NavButton";
 
 import LucianFace from "../media/images/lucian.jpg";
-import TimFace from "../media/images/tim.jpg";
+import TimFace from "../media/images/tim.png";
 import MobileMenu from "../media/icons/hamburgerMenu.svg";
 import MobileClose from "../media/icons/hamburgerX.svg";
 
