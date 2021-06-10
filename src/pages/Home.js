@@ -8,7 +8,7 @@ import BackgroundData from "../components/background/BackgroundData";
 import Button from "../components/home/HomeButton";
 // Picture of Lucian and Tim
 import lucianPic from "../media/images/lucian.jpg";
-import timPic from "../media/images/tim.jpg";
+import timPic from "../media/images/tim.png";
 
 function Home() {
   return (
