@@ -120,7 +120,7 @@ function Lucian() {
                 <li>CSS/Tailwind</li>
               </ul>
               <br />
-              <p>Also familiar with these tools:</p>
+              <p>Also familiar with these tools, among many others:</p>
               <ul>
                 <li>React</li>
                 <li>Unity</li>

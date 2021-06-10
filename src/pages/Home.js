@@ -12,7 +12,7 @@ import timPic from "../media/images/tim.png";
 
 function Home() {
   return (
-    <div className="bg-background bg-opacity-40 h-screen w-screen mx-auto absolute pt-1/5 text-center flex flex-col">
+    <div className="bg-background bg-opacity-40 h-screen w-full md:pt-0 mx-auto absolute pt-1/5 text-center flex flex-col">
       <div className="mx-auto my-auto flex flex-wrap sm:justify-center">
         <section className="hidden sm:block text-white font-righteous text-5xl p-6">
           <h2>BBQThreats Presents</h2>
@@ -42,7 +42,7 @@ function Home() {
               {"<- "}These Guys{" ->"}
             </h2>
           </article>
-          <section className="flex flex-row ">
+          <section className="flex flex-row justify-evenly">
             <article className="flex justify-center">
               <Button name={"Lucian Earl"} image={lucianPic} link={"/Lucian"} />
             </article>
